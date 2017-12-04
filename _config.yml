@@ -1,0 +1,3 @@
+mardown: redcarpet
+baseurl: /autocare
+exclude: ['README.md']

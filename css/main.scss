@@ -1,0 +1,137 @@
+---
+
+---
+
+@import "normalize";
+
+$main-color: #adadad;
+$hover-color: #525252;
+$header-bg: rgba(255,255,255,0.99);
+
+html {
+    background: #f2f2f2;
+    &* {
+        box-sizing: border-box;
+    }
+}
+
+body{
+    padding-top: 78px;
+    font: normal 100%/1.4 "Roboto", san-serif;
+    color: $main-color;
+}
+
+.container {
+    max-width: 1280px;
+    height: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h1,h2,h3,p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    color: $main-color;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    &:hover {
+        color: $hover-color;
+    }
+
+}
+
+.main-header {
+    background-color: $header-bg;
+    border-bottom: 1px solid rgba(0,0,0,0.07);
+    box-shadow: 0px 3px 8px -4px rgba(0,0,0,0.15);
+    height: 68px;
+    position: fixed;
+    top: 0;
+    user-select: none;
+    width: 100%;
+    z-index: 2000;
+}
+
+.main-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    .main-header-logo {
+        display: flex;
+        align-items: center;
+        img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+        }
+        span {
+            padding-left: 15px;
+            font-size: 20px;
+        }
+    }
+}
+
+.site-jumbotron {
+    padding: 20px 0;
+}
+.site-jumbotron-bg {
+    position: relative;
+    padding: 88px 0;
+    text-align: center;
+    background: url(../images/main-bg.jpg) no-repeat center;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.65);
+        z-index: 100;
+    }
+    h1 {
+        position: relative;
+        font-size: 43px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 400;
+        color: #fff;
+        z-index: 200;
+    }
+}
+
+.main-nav {
+    padding: 10px 0 20px 0;
+    ul {
+        display: flex;
+    }
+    li {
+        padding: 0 10px;
+    }
+    a {
+        display: block;
+        font-weight: 300;
+        font-size: 18px;
+        &.active {
+            color: $hover-color;
+        }
+    }
+}
+
+.main-footer {
+    background: #fff;
+    padding: 20px 0;
+    font-size: 15px;
+    font-weight: 400px;
+    text-align: center;
+}

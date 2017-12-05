@@ -135,3 +135,32 @@ a {
     font-weight: 400px;
     text-align: center;
 }
+
+.grid-ct {
+    display: grid;
+    padding: 10px 0 20px 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.grid-item {
+    min-height: 400px;
+    background: #fff;
+    box-shadow: 0px 3px 8px -4px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    &:hover {
+        box-shadow: 0 22px 43px rgba(0,0,0,0.15);
+    }
+    img {
+        display: block;
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+.grid-item-header {
+    height: 48px;
+}
+.grid-item-footer {
+    font-size: 14px;
+    padding: 20px;
+}

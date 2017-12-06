@@ -1,5 +1,5 @@
 {% for item in include.datastore %}
-<div class="grid-item">
+<div class="grid-item" id="grid-item-{{item.id}}" data-izimodal-open="#modal">
     <div class="grid-item-header">
         <button class="price-btn">{{ item.price }} UAH</button>
     </div>
@@ -11,6 +11,18 @@
         <p class="box-weight">
             <span>{{ item.weight }} мл</span>
         </p>
+    </div>
+</div>
+<div class="item-content">
+    <div class="modal-content">
+        <div class="modal-content-info">
+            <div class="modal-left">
+                <img src="{{site.baseurl}}{{ item.image }}" alt="test image">
+            </div>
+            <div class="modal-right">
+                <p>{{ item.title }}</p>
+            </div>
+        </div>
     </div>
 </div>
 {% endfor %}

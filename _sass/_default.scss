@@ -1,0 +1,41 @@
+html {
+    background: #f2f2f2;
+    &* {
+        box-sizing: border-box;
+    }
+}
+
+body{
+    padding-top: 78px;
+    font: normal 100%/1.4 "Open Sans", san-serif;
+    color: $main-color;
+}
+
+.container {
+    max-width: 1280px;
+    height: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h1,h2,h3,p {
+    margin: 0;
+    font-weight: normal;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    color: $main-color;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    &:hover {
+        color: $hover-color;
+    }
+
+}

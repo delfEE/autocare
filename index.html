@@ -2,31 +2,6 @@
 layout: default
 ---
 <div class="grid-ct">
-    <div class="grid-item">
-        <div class="grid-item-header">
-
-        </div>
-        <div class="grid-item-body">
-            <img src="{{site.baseurl}}/images/test.png" alt="test image">
-        </div>
-        <div class="grid-item-footer">
-            <h3>Освежитель воздуха (ароматизатор салона) "Апельсин"</h3>
-        </div>
-    </div>
-    <div class="grid-item">
-        
-    </div>
-    <div class="grid-item">
-        
-    </div>
-    <div class="grid-item">
-        
-    </div>
-    <div class="grid-item">
-        
-    </div>
-    <div class="grid-item">
-        
-    </div>
+    {% include items.html datastore= site.data.freshers %}
 </div>
 

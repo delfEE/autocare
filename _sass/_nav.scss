@@ -1,0 +1,17 @@
+.main-nav {
+    padding: 10px 0 20px 0;
+    ul {
+        display: flex;
+    }
+    li {
+        padding: 0 10px;
+    }
+    a {
+        display: block;
+        font-weight: 300;
+        font-size: 18px;
+        &.active {
+            color: $hover-color;
+        }
+    }
+}

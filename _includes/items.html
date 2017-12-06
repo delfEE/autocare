@@ -1,0 +1,16 @@
+{% for item in include.datastore %}
+<div class="grid-item">
+    <div class="grid-item-header">
+        <button class="price-btn">{{ item.price }} UAH</button>
+    </div>
+    <div class="grid-item-body">
+        <img src="{{site.baseurl}}{{ item.image }}" alt="test image">
+        <h3>{{ item.title }}</h3>            
+    </div>
+    <div class="grid-item-footer">
+        <p class="box-weight">
+            <span>{{ item.weight }} мл</span>
+        </p>
+    </div>
+</div>
+{% endfor %}

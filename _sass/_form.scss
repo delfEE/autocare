@@ -9,6 +9,7 @@ input {
     line-height: 1.2em;
     font-weight: 500;
     outline: none;
+    border-bottom: 1px solid transparent;
     padding: 14px 14px 12px;
     width: 100%;
     transition: border-bottom 0.2s ease-in-out;
@@ -33,6 +34,7 @@ input {
     position: relative;
     text-decoration: none;
     text-align: center;
+    outline: none;
     transition-property: background-color, padding, font-size;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
@@ -71,7 +73,7 @@ input {
         width: 100%;
         max-width: 480px;
         text-align: center;
-
+        transition: opacity 0.2s ease;
     }
     a {
         display: inline-block;
@@ -90,4 +92,5 @@ input {
 
 .btn-container {
     padding: 10px 0;
+    text-align: center;
 }

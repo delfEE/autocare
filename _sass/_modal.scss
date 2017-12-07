@@ -15,16 +15,20 @@
 }
 .modal-right {
     flex: 1;
-    text-align: center;
+    text-align: left;
+    color: #000;
 }
+
 
 .iziModal-header {
     h2 {
         text-transform: uppercase;
+        font-weight: bold;
     }
 }
 
-.make-order {
+.make-order,
+.btn-ok {
     display: inline-block;
     font-size: 14px;
     font-weight: 700;
@@ -36,4 +40,44 @@
     background-color: #fc459e;
     text-transform: uppercase;
     cursor: pointer;
+    &.small {
+        padding: 5px 10px;
+    }
+}
+
+.after-form {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    opacity: 0;
+    text-align: center;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+    img {
+        display: inline-block;
+        width: 100px;
+    }
+    .thanks-text {
+        padding: 20px 0 7px 0;
+        font-size: 30px;
+        font-weight: bold;
+        &+p {
+            padding-bottom: 15px;
+            font-size: 18px;
+        }
+    }
+    &.show {
+        opacity: 1;
+        z-index: 2;
+    }
+}
+
+.after-form-ct {
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
 }

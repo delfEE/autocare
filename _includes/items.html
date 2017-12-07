@@ -20,7 +20,15 @@
                 <img src="{{site.baseurl}}{{ item.image }}" alt="test image">
             </div>
             <div class="modal-right">
-                <p>{{ item.title }}</p>
+                <h3 class="item-title">{{ item.title }}</h3>
+                <p>{{ item.description }}</p>
+                <p class="item-sub-title">Состав:</p>
+                <p>{{ item.composition }}</p>
+                <p class="item-sub-title">Применение:</p>
+                <p>{{ item.uses }}</p>
+                <p class="item-sub-title">Упаковка:</p>
+                <p>{{ item.weight }} мл</p>
+
                 <div class="btn-container">
                     <button class="make-order">Оформить заказ</button>
                 </div>
@@ -43,7 +51,7 @@
                 <div class="form-group">
                     <label>
                         <span>Email</span>
-                        <input  type="text" name="phone">
+                        <input  type="text" name="email">
                     </label>
                 </div>
                 <input type="hidden" name="_subject" value="Новый заказ">
@@ -53,6 +61,16 @@
                     <button class="submit-btn">Заказать</button>
                 </div>
             </form>
+            <div class="after-form">
+                <div class="after-form-ct">
+                    <img src="{{ site.baseurl }}/images/happy.svg" alt="happy smile">
+                    <p class="thanks-text">Спасибо за заказ!</p>
+                    <p>Наш менеджер свяжется с вами уточнить информацию.</p>
+                    <div class="btn-container">
+                        <button class="btn-ok">ок</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

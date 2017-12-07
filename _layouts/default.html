@@ -29,7 +29,7 @@
 
 <!-- Modal structure -->
 <div id="modal">
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui voluptates perspiciatis aut velit excepturi vitae ullam facilis odit, minus id laborum nesciunt soluta rerum reprehenderit magnam perferendis iste ea asperiores?
+    
 </div>
 
 
@@ -43,7 +43,7 @@
  <script>
      $("#modal").iziModal({
         title: 'Заказать товар',
-        headerColor: '#3398e1',
+        headerColor: '#adadad',
         width: 1000,
      });
      var el;
@@ -54,6 +54,33 @@
             content: el.html()
         });
     });
+
+    // $(document).on('click', '.submit-btn', function(e) {
+    //     e.preventDefault();
+    //     console.log($(this).parent().serializeArray());
+    //     $.ajax({
+    //         url: "https://formspree.io/delf.faith@gmail.com", 
+    //         method: "POST",
+    //         data: $(this).parent().serializeArray(),
+    //         dataType: "json",
+    //         success: function () {
+    //             console.log('form was submitted');
+    //         }
+    //     })
+    // });
+
+    $(document).on('click', '.make-order', function() {
+        var form = $(this).parents('.modal-content-info').next();
+        form.addClass('show');
+    });
+
+    $(document).on('click', '#cancel-order', function(e) {
+        e.preventDefault();
+        var form = $(this).parents('.main-form');
+        form.removeClass('show');
+    });
+
+
 
  </script>
 </body>

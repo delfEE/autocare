@@ -1,3 +1,6 @@
+.modal-content {
+    position: relative;
+}
 .modal-content-info {
     display: flex;
     padding: 20px;
@@ -13,4 +16,24 @@
 .modal-right {
     flex: 1;
     text-align: center;
+}
+
+.iziModal-header {
+    h2 {
+        text-transform: uppercase;
+    }
+}
+
+.make-order {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    border: none;
+    outline: none;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    background-color: #fc459e;
+    text-transform: uppercase;
+    cursor: pointer;
 }

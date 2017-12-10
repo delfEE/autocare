@@ -4,7 +4,7 @@
         <button class="price-btn">{{ item.price }} UAH</button>
     </div>
     <div class="grid-item-body">
-        <img src="{{site.baseurl}}{{ item.image }}" alt="test image">
+        <img src="{{site.baseurl}}{{ item.image }}" alt="{{ item.title }} HELPIX">
         <h3>{{ item.title }}</h3>            
     </div>
     <div class="grid-item-footer">
@@ -17,7 +17,7 @@
     <div class="modal-content">
         <div class="modal-content-info">
             <div class="modal-left">
-                <img src="{{site.baseurl}}{{ item.image }}" alt="test image">
+                <img src="{{site.baseurl}}{{ item.image }}" alt="{{ item.title }} HELPIX">
             </div>
             <div class="modal-right">
                 <h3 class="item-title">{{ item.title }}</h3>
@@ -63,7 +63,7 @@
             </form>
             <div class="after-form">
                 <div class="after-form-ct">
-                    <img src="{{ site.baseurl }}/images/happy.svg" alt="happy smile">
+                    <img src="{{ site.baseurl }}/images/site/happy.svg" alt="happy smile">
                     <p class="thanks-text">Спасибо за заказ!</p>
                     <p>Наш менеджер свяжется с вами уточнить информацию.</p>
                     <div class="btn-container">

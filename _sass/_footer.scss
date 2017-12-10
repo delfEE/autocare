@@ -5,3 +5,28 @@
     font-weight: 400px;
     text-align: center;
 }
+
+.footer-social-links {
+    a {
+        display: inline-block;
+        width: 32px;
+        height: 48px;
+        font-size: 0;
+        vertical-align: bottom;
+        background-repeat: no-repeat;
+        background-position: center center;
+        transition: opacity 0.2s ease-in-out;
+        opacity: .3;
+        &:hover {
+            opacity: 0.7
+        }
+    }
+    .instagram {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAchJREFUWAntlc8rRUEUx59f5VdhYycrJbGQkgULGxYSaxbKSllasLSxoCzY%2BIOULGUjiSyIWPkV%2Bf05mlPTNPPe3HHrbe63vu%2BcmTnnO2fOvW9uqVSg6ECVO1ATsb%2FExMT5pH6YFCZhmKxzqCKp9hKNUZgZx2SkburmnYV2L9fab5LKrfs0P5mch7dmcRG7YPxarBQWDfcUMeMLR32CseZ5DyNVVRV5F9DBaVqsE3VZfmZXW%2BezT6itwiE4CFfgA5TYZ3hjKO%2BR5nsfAetBaKJrX8jo82T1MPcI3XgdJxewh%2BgS%2FDLi69gQ1ljQDZfxd61xcgEziHRaQuP4IYywoAV04%2Bf2L7Crbwjtzry9ZucEU2L%2FBXco3BsVOVUIuiYv5FUoKHZeWymPQLAJZe4DjkEX8u14gxIjz14wCVUnqiN%2FWeZHE7WAJuZPjaAUsQOn4RTchu9QcuQ2bIWCXAsQwQF4ArU418pHR%2B4FRcWXUAN9VsW1AxrTiLMBr6HGyMWzBZuhjVw6MGsrOn4b43Znzh5WLKDejnZ8uXjqoFxC8vzltFkxlzXBjj9koC3%2Brz2yhWP9XgL3oXxcXhMp340D2A8LFB0oOuDtwC8Yts0UM4D8%2BQAAAABJRU5ErkJggg%3D%3D);
+    }
+
+    .facebook {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAALNJREFUeNpi%2FP%2F%2FP8NAAiaGAQajDhh1ANEOYGRkRMcCQDwfiM8D8X8gvg%2FE%2B0l1ACOx2RBkKRJQAOLzQCyArg5oHiM9oqAem%2BXkABYy9QWg8RcA8UNyDCI3CpA1XQBiQ6QooHsu%2BDBiyoH90KBHD2MHJPH%2FAx0CFwbaAR9omQ0XAvFBpHIABh5A5cgKAXC2IQaja0PC%2B8kxD4ZHa8NRB4w6YMAdwDjaMRl1wKgDBtoBAAEGAJwhbiKJBO64AAAAAElFTkSuQmCC);
+    }
+
+}

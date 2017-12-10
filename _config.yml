@@ -1,3 +1,4 @@
 mardown: redcarpet
 baseurl: /autocare
+# baseurl: http://1166498.victor9.web.hosting-test.net
 exclude: ['README.md']

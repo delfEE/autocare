@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="container">
+    <nav class="main-nav">
+        <ul>
+            <li><a href="{{site.baseurl}}/products/polishes/polish-100/" class="{% if page.url contains 'polish-100' %}active{% endif %}">100 мл</a></li>
+            <li><a href="{{site.baseurl}}/products/polishes/polish-200/" class="{% if page.url contains 'polish-200' %}active{% endif %}">200 мл</a></li>
+            <li><a href="{{site.baseurl}}/products/polishes/polish-500/" class="{% if page.url contains 'polish-500' %}active{% endif %}">500 мл</a></li>
+        </ul>
+    </nav>
+</div>
+
+{{content}}

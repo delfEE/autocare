@@ -1,4 +1,7 @@
 mardown: redcarpet
-baseurl: /autocare
-# baseurl: http://1166498.victor9.web.hosting-test.net
+# baseurl: /autocare
+baseurl: http://autocare.in.ua
 exclude: ['README.md']
+permalink: pretty
+gems:
+    - jekyll-minifier

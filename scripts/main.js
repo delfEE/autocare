@@ -31,37 +31,37 @@ $(document).ready(function() {
         if (!checkName) {
             $(name).css("border-bottom-color", "red");
         }else {
-            $(name).css("border-bottom-color", "transparent");
+            $(name).css("border-bottom-color", "#ebebeb");
         }
 
         if (!checkPhone) {
             $(phone).css("border-bottom-color", "red");
         }else {
-            $(phone).css("border-bottom-color", "transparent");
+            $(phone).css("border-bottom-color", "#ebebeb");
         }
 
         if (!checkEmail) {
             $(email).css("border-bottom-color", "red");
         }else {
-            $(email).css("border-bottom-color", "transparent");
+            $(email).css("border-bottom-color", "#ebebeb");
         }
 
         
 
         if (checkPhone && checkName && checkEmail) {
             $(this).parents('form').hide();
-
             $(this).parents('.main-form').find('.after-form').addClass('show');
-
-            // $.ajax({
-            //     url: "https://formspree.io/delf.faith@gmail.com", 
-            //     method: "POST",
-            //     data: $(this).parents('form').serializeArray(),
-            //     dataType: "json",
-            //     success: function () {
-            //         $(this).parents('form')
-            //     }
-            // })
+            $.ajax({
+                url: "https://formspree.io/autocareua@gmail.com", 
+                method: "POST",
+                data: $(this).parents('form').serializeArray(),
+                dataType: "json",
+                success: function () {
+                    phone.val('');
+                    name.val('');
+                    email.val('');
+                }
+            })
         }
     });
 

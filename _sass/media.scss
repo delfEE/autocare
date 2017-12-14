@@ -1,0 +1,31 @@
+@media screen and (max-width: 998px) {
+    .grid-ct {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid-ct {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-content-info {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .site-jumbotron-bg h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .site-jumbotron-bg h1 {
+        font-size: 25px;
+    }
+
+    .main-header-wrapper a {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,45 @@
+<!-- Modal structure -->
+<div id="modal">
+    <div class="modal-content">
+            <div class="main-form">
+                <form action="" >
+                    <div class="form-group">
+                        <label>
+                            <span>Имя</span>
+                            <input type="text" name="name">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <span>Телефон</span>
+                            <input  type="text" name="phone">
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <span>Email</span>
+                            <input  type="text" name="email">
+                        </label>
+                    </div>
+                    <input type="hidden" name="_subject" value="Новый заказ">
+                    <input type="hidden" name="subject" value="Новый заказ">
+                    <input type="hidden" name="weight" value="{{ include.item[include.item-number].weight }} мл">
+                    <input type="hidden" name="product" value="{{ include.item[include.item-number].title }}">
+                    <div class="btn-container">
+                        <a id="cancel-order" href="#">Отмена</a>
+                        <button class="submit-btn">Заказать</button>
+                    </div>
+                </form>
+                <div class="after-form">
+                    <div class="after-form-ct">
+                        <img src="{{ site.baseurl }}/images/site/happy.svg" alt="happy smile">
+                        <p class="thanks-text">Спасибо за заказ!</p>
+                        <p>Наш менеджер свяжется с вами уточнить информацию.</p>
+                        <div class="btn-container">
+                            <button class="btn-ok">ок</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>

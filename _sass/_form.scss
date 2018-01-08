@@ -59,17 +59,10 @@ input {
 }
 
 .main-form {
-    position: fixed;
     display: flex;
     padding: 20px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
     background: rgba(256, 256, 256, 0.98);
     transition: opacity 0.3s ease;
-    z-index: -1;
     form {
         margin: auto;
         width: 100%;
@@ -85,10 +78,6 @@ input {
         &:hover {
             text-decoration: underline;
         }
-    }
-    &.show {
-        opacity: 1;
-        z-index: 1;
     }
 }
 

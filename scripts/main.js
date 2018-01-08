@@ -2,18 +2,8 @@ $(document).ready(function() {
     $("#modal").iziModal({
         title: 'Заказать товар',
         headerColor: '#262d31',
-        width: 1000,
+        width: 500
      });
-
-
-     var el;
-    $( document ).on("click", ".grid-item", function( event ) {
-        el = $(event.currentTarget).next();
-        $('#modal').iziModal('setContent', {
-            content: el.html()
-        });
-    });
-
 
 
     $(document).on('click', '.submit-btn', function(e) {
@@ -65,26 +55,26 @@ $(document).ready(function() {
         }
     });
 
-    $(document).on('click', '.make-order', function() {
-        var form = $(this).parents('.modal-content-info').next();
-        form.addClass('show');
-    });
 
     $(document).on('click', '#cancel-order', function(e) {
         e.preventDefault();
-        var form = $(this).parents('.main-form');
-        form.removeClass('show');
+        var phone = $(this).parents('.main-form').find('input[name="phone"]');
+        var name = $(this).parents('.main-form').find('input[name="name"]');
+        var email = $(this).parents('.main-form').find('input[name="email"]');
+        phone.val('');
+        name.val('');
+        email.val('');
+        $('#modal').iziModal('close');
     });
 
     $(document).on('click', '.btn-ok', function(e) {
         e.preventDefault();
-        var form = $(this).parents('.main-form');
-        form.removeClass('show');
+        $('#modal').iziModal('close');
+    });
 
-        setTimeout(function() {
-            $('form').show();
-            $('.after-form').removeClass('show');
-        }, 300);
+    $(document).on('closed', '#modal', function (e) {
+        $('form').show();
+        $('.main-form').find('.after-form').removeClass('show');
     });
 });
    

@@ -1,0 +1,28 @@
+---
+layout: product-detail
+title: Полироль клубника 100 мл
+meta: Полироль автомобильная клубника HELPIX 100 мл, защита Вашего авто.
+---
+
+<div class="modal-content-info">
+    <div class="modal-left">
+        <img src="{{site.baseurl}}{{ site.data.polishs-500[4].image }}" alt="{{ site.data.polishs-500[4].title }} HELPIX">
+    </div>
+    <div class="modal-right">
+        <h4 class="item-title">{{ site.data.polishs-500[4].title }}</h4>
+        <p>{{ site.data.polishs-500[4].description }}</p>
+        <p class="item-sub-title">Состав:</p>
+        <p>{{ site.data.polishs-500[4].composition }}</p>
+        <p class="item-sub-title">Применение:</p>
+        <p>{{ site.data.polishs-500[4].uses }}</p>
+        <p class="item-sub-title">Упаковка:</p>
+        <p>{{ site.data.polishs-500[4].weight }} мл</p>
+        <p class="item-sub-title">Цена:</p>
+        <p>{{ site.data.polishs-500[4].price }} грн</p>
+        <div class="btn-container">
+            <button class="make-order" data-izimodal-open="#modal">Оформить заказ</button>
+        </div>
+    </div>
+</div>
+
+{% include order-modal.html item= site.data.polishs-500 item-number= 4 %}

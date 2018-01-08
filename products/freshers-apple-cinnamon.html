@@ -1,0 +1,28 @@
+---
+layout: product-detail
+title: Освежителm воздуха 60 мл
+meta: Освежителm воздуха 'Яблоко-корица' HELPIX 60 мл, приятный аромат.
+---
+
+<div class="modal-content-info">
+    <div class="modal-left">
+        <img src="{{site.baseurl}}{{ site.data.freshers[14].image }}" alt="{{ site.data.freshers[14].title }} HELPIX">
+    </div>
+    <div class="modal-right">
+        <h3 class="item-title">{{ site.data.freshers[14].title }}</h3>
+        <p>{{ site.data.freshers[14].description }}</p>
+        <p class="item-sub-title">Состав:</p>
+        <p>{{ site.data.freshers[14].composition }}</p>
+        <p class="item-sub-title">Применение:</p>
+        <p>{{ site.data.freshers[14].uses }}</p>
+        <p class="item-sub-title">Упаковка:</p>
+        <p>{{ site.data.freshers[14].weight }} мл</p>
+        <p class="item-sub-title">Цена:</p>
+        <p>{{ site.data.freshers[14].price }} грн</p>
+        <div class="btn-container">
+            <button class="make-order"  data-izimodal-open="#modal">Оформить заказ</button>
+        </div>
+    </div>
+</div>
+
+{% include order-modal.html item= site.data.freshers item-number= 14 %}

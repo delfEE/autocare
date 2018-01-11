@@ -5,18 +5,28 @@
 }
 
 @media screen and (max-width: 768px) {
-    .grid-ct {
-        grid-template-columns: 1fr;
-    }
+
 
     .modal-content-info {
         flex-direction: column;
+    }
+
+    .main-nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-nav li{
+        padding: 5px 10px;
     }
 }
 
 @media screen and (max-width: 567px) {
     .site-jumbotron-bg h1 {
         font-size: 30px;
+    }
+
+    .grid-ct {
+        grid-template-columns: 1fr;
     }
 }
 

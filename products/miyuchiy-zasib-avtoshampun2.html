@@ -1,0 +1,30 @@
+---
+layout: product-detail
+title: Моющее средство Автошампунь
+meta: Концентрат моющего средства для интенсивной очистки автомобиля. Легко та безопасно смывает все виды загрязнения. Бутылка ПЭТ 1л.
+---
+
+<div class="modal-content-info">
+    <div class="modal-left">
+        <img src="{{site.baseurl}}{{ site.data.other[2].image }}" alt="{{ site.data.other[2].title }} HELPIX">
+    </div>
+    <div class="modal-right">
+        <h3 class="item-title">{{ site.data.other[2].title }}</h3>
+        <p>{{ site.data.other[2].description }}</p>
+        {% if site.data.other[2].composition != "" %}
+        <p class="item-sub-title">Состав:</p>
+        <p>{{ site.data.other[2].composition }}</p>
+        {% endif %}  
+        <p class="item-sub-title">Применение:</p>
+        <p>{{ site.data.other[2].uses }}</p>
+        <p class="item-sub-title">Упаковка:</p>
+        <p>{{ site.data.other[2].weight }} мл</p>
+        <p class="item-sub-title">Цена:</p>
+        <p>{{ site.data.other[2].price }} грн</p>
+        <div class="btn-container">
+            <button class="make-order"  data-izimodal-open="#modal">Оформить заказ</button>
+        </div>
+    </div>
+</div>
+
+{% include order-modal.html item= site.data.other item-number= 2 %}

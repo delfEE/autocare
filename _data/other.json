@@ -35,7 +35,7 @@
     {
         "id": 3,
         "title": "Профессиональное средство для очистки рук Lemon SCRUB",
-        "price": 0,
+        "price": 120,
         "weight": 1000,
         "image": "/images/products/other/other-4.jpg",
         "url": "/products/lemon-scrub",
@@ -46,7 +46,7 @@
     {
         "id": 4,
         "title": "Средство для розжига мангалов и каминов - твердое",
-        "price": 0,
+        "price": 18,
         "weight": 1000,
         "image": "/images/products/other/other-5.jpg",
         "url": "/products/zasib-dlya-rozpalyuvannya",
@@ -57,7 +57,7 @@
     {
         "id": 5,
         "title": "Средство для розжига дерева и угля. Жидкий",
-        "price": 0,
+        "price": 17,
         "weight": 1000,
         "image": "/images/products/other/other-6.jpg",
         "url": "/products/rozjig-jidkiy",
@@ -68,7 +68,7 @@
     {
         "id": 6,
         "title": "Омыватель летний с эффектом 'Антимошка'",
-        "price": 0,
+        "price": 32,
         "weight": 3000,
         "image": "/images/products/other/other-7.jpg",
         "url": "/products/omyvatel-antimoshka",

@@ -24,7 +24,7 @@
     {
         "id": 2,
         "title": "Моющее средство 'Автошампунь'",
-        "price": 22,
+        "price": 34,
         "weight": 1000,
         "image": "/images/products/other/other-3.png",
         "url": "/products/miyuchiy-zasib-avtoshampun2",
@@ -57,7 +57,7 @@
     {
         "id": 5,
         "title": "Средство для розжига дерева и угля. Жидкий",
-        "price": 17,
+        "price": 55,
         "weight": 1000,
         "image": "/images/products/other/other-6.jpg",
         "url": "/products/rozjig-jidkiy",

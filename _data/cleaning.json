@@ -2,7 +2,7 @@
     {
         "id": 0,
         "title": "Химчистка салона - Helpix Professiona",
-        "price": 21,
+        "price": 30,
         "weight": 500,
         "image": "/images/products/cleaning/cleaning-1.png",
         "url": "/products/salon",
@@ -13,7 +13,7 @@
     {
         "id": 1,
         "title": "Полироль-Кондиционер для шин 'Чорна Гума'",
-        "price": 37,
+        "price": 42,
         "weight": 500,
         "image": "/images/products/cleaning/cleaning-2.png",
         "url": "/products/tire_conditioner",
@@ -24,7 +24,7 @@
     {
         "id": 2,
         "title": "'Aнтибитум' - Helpix Professional",
-        "price": 70,
+        "price": 73,
         "weight": 500,
         "image": "/images/products/cleaning/cleaning-3.png",
         "url": "/products/antibitum",

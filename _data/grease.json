@@ -2,7 +2,7 @@
     {
         "id": 0,
         "title": "Силиконовая смазка (аэрозоль)",
-        "price": 45,
+        "price": 73,
         "weight": 200,
         "image": "/images/products/grease/grease-1.png",
         "url": "/products/silicon_grease-200",
@@ -13,7 +13,7 @@
     {
         "id": 1,
         "title": "Силиконовая смазка (аэрозоль)",
-        "price": 70,
+        "price": 89,
         "weight": 400,
         "image": "/images/products/grease/grease-2.png",
         "url": "/products/silicon_grease-400",

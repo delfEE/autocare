@@ -2,7 +2,7 @@
     {
         "id": 0,
         "title": "Полироль автомобильная 'Лимон'",
-        "price": 70,
+        "price": 110,
         "weight": 500,
         "image": "/images/products/polish/polish-lemon-500.png",
         "url": "/products/polish-500-lemon",
@@ -13,7 +13,7 @@
     {
         "id": 1,
         "title": "Полироль для пластика и винила (Без запаха)",
-        "price": 70,
+        "price": 100,
         "weight": 500,
         "image": "/images/products/polish/polish-none-500.png",
         "url": "/products/polish-500-nosmell",
@@ -24,7 +24,7 @@
     {
         "id": 2,
         "title": "Полироль автомобильная 'Яблоко'",
-        "price": 70,
+        "price": 110,
         "weight": 500,
         "image": "/images/products/polish/polish-apple-500.png",
         "url": "/products/polish-500-apple",
@@ -35,7 +35,7 @@
     {
         "id": 3,
         "title": "Полироль автомобильная 'Ваниль'",
-        "price": 70,
+        "price": 110,
         "weight": 500,
         "image": "/images/products/polish/polish-vanile-500.png",
         "url": "/products/polish-500-vanile",
@@ -46,7 +46,7 @@
     {
         "id": 4,
         "title": "Полироль автомобильная 'Полуниця'",
-        "price": 70,
+        "price": 110,
         "weight": 500,
         "image": "/images/products/polish/polish-strawberry-500.png",
         "url": "/products/polish-500-strawberry",
